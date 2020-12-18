@@ -15,7 +15,7 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Badge from '@material-ui/core/Badge';
 import AccountCircleIcon from '@material-ui/icons/AccountCircleOutlined';
 import SettingsIcon from '@material-ui/icons/Settings';
-
+import { mainListItems } from './ListItems';
 
 const drawerWidth = 240;
 
@@ -34,6 +34,24 @@ const useStyles = makeStyles((theme) => ({
             width: `calc(100% - ${drawerWidth}px)`,
             marginLeft: drawerWidth,
         },
+    },
+    menuButton: {
+        marginRight: theme.spacing(2),
+        [theme.breakpoints.up('sm')]: {
+            display: 'none',
+        },
+    },
+    toolbarButtons: {
+        marginLeft: 'auto',
+    },
+    // necessary for content to be below app bar
+    toolbar: theme.mixins.toolbar,
+    drawerPaper: {
+        width: drawerWidth,
+    },
+    content: {
+        flexGrow: 1,
+        padding: theme.spacing(3),
     },
 }));
 
@@ -73,7 +91,15 @@ const ResponsiveDrawer = (props) => {
                 className={classes.appBar}
             >
                 <Toolbar className={classes.toolbar}>
-                    
+                    <IconButton
+                        edge='start'
+                        color='inherit'
+                        aria-label='open drawer'
+                        onClick={handleDrawerToggle}
+                        className={classes.menuButton}
+                    >
+                        <MenuIcon />
+                    </IconButton>
                     <Typography
                         component='h1'
                         variant='h6'
@@ -92,7 +118,11 @@ const ResponsiveDrawer = (props) => {
                             <AccountCircleIcon fontSize='large' />
                         </Badge>
                     </IconButton>
-                    
+                    <IconButton color='inherit' edge='start'>
+                        <Badge color='secondary'>
+                            <SettingsIcon fontSize='small' />
+                        </Badge>
+                    </IconButton>
                 </Toolbar>
             </AppBar>
             <nav className={classes.drawer} aria-label='mailbox folders'>
