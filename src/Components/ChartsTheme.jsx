@@ -74,7 +74,23 @@ window.FusionCharts.register("theme", {
           startingAngle: "90"
         }
       },
-      
+      geo: {
+        chart: {
+          captionFontSize: "14",
+          captionFontColor: "#8091ab",
+          legendScaleLineThickness: "0",
+          legendaxisborderalpha: "0",
+          legendShadow: "0",
+          plotFillAlpha: "85",
+          showBorder: "1",
+          borderColor: "#ffffff",
+          borderThickness: "0.3",
+          nullEntityColor: "#17202e",
+          nullEntityAlpha: "50",
+          entityFillHoverColor: "#17202e",
+          captionAlignment: "left",
+          entityToolText: "<div>$lname<br><b>$value orders</b>",
+          chartLeftMargin: "40"
         }
       }
     }
