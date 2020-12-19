@@ -33,6 +33,9 @@ const Deposits = () => {
             <Grid item xs={12} md={4} lg={12}>
                 <Paper className={fixedHeightPaper}>
                     <Title>Todays Appoinments </Title>
+                    <Typography component='p' variant='h4'>
+                        No Upcoming Consultation
+                    </Typography>
                     <Typography
                         color='textSecondary'
                         className={classes.depositContext}
