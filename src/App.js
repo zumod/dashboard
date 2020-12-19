@@ -1,12 +1,18 @@
+import React, { Component } from 'react';
 import './App.css';
-import Dashboard from './Components/Dashboard';
+import { Route, Switch } from 'react-router-dom';
+import Dashboard from './components/Dashboard';
+import Settings from './components/Settings';
 
-function App() {
-  return (
-    <div className="App">
-      <Dashboard />
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <div className='App'>
+            <Switch>
+                <Route path='/' exact component={Dashboard} />
+                <Route path='/settings' component={Settings} />
+            </Switch>
+        </div>
+    );
+};
 
 export default App;
