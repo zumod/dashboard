@@ -6,6 +6,9 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Drawer from './ResponsiveDrawer';
+import Chart from './Chart';
+import Deposits from './Appoinments';
+import Orders from './Orders';
 import { ThemeProvider } from '@material-ui/core/styles';
 import { createMuiTheme } from '@material-ui/core/styles';
 
