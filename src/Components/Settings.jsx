@@ -7,7 +7,7 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import { ThemeProvider } from '@material-ui/core/styles';
 import { createMuiTheme } from '@material-ui/core/styles';
-import ProfileEdit from './ProfilEdit';
+import ProfileEdit from './ProfileEdit';
 import Profile from './Profile';
 
 const drawerWidth = 240;
