@@ -18,7 +18,7 @@ const Profile = () => {
 
     return (
         <React.Fragment>
-            <Grid item md={8} lg={12}>
+            <Grid item xs={12} md={8} lg={12}>
                 <Paper className={fixedHeightPaper}>
                     <h4>Professional Profile </h4>
                 </Paper>
