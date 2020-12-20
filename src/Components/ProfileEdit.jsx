@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
 import clsx from 'clsx';
+import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import PhotoCamera from '@material-ui/icons/PhotoCamera';
 import CloudUploadIcon from '@material-ui/icons/CloudUpload';
@@ -52,7 +53,15 @@ const ProfileEdit = () => {
                             Profile Picture
                             <br />
                             <br />
-                            
+                            <Avatar
+                                alt='photo'
+                                src='https://media.idownloadblog.com/wp-content/uploads/2018/01/Facebook-contact-icon.jpg'
+                                style={{
+                                    margin: '0 auto',
+                                    width: '100px',
+                                    height: '100px',
+                                }}
+                            />
                             <br />
                             <input
                     accept="image/*"
@@ -79,7 +88,15 @@ const ProfileEdit = () => {
                             Signature
                             <br />
                             <br />
-                            
+                            <Avatar
+                                alt='photo'
+                                src='https://www.docsketch.com/assets/vip-signatures/muhammad-ali-signature-6a40cd5a6c27559411db066f62d64886c42bbeb03b347237ffae98b0b15e0005.svg'
+                                style={{
+                                    margin: '0 auto',
+                                    width: '100px',
+                                    height: '100px',
+                                }}
+                            />
                             <br />
                             <input
                     accept="image/*"
