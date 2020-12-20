@@ -15,6 +15,12 @@ const useStyles = makeStyles((theme) => ({
         flex: 1,
     },
     spacing: [0, 2, 3, 5, 8],
+    paper: {
+        padding: theme.spacing(2),
+        display: 'flex',
+        overflow: 'auto',
+        flexDirection: 'column',
+    },
     fixedHeight: {
         height: 'auto',
     },
