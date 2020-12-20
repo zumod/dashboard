@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
-import Dashboard from './components/Dashboard';
-import Settings from './components/Settings';
+import Dashboard from './Components/Dashboard';
+import Settings from './Components/Settings';
 
 const App = () => {
     return (
