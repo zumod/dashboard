@@ -4,9 +4,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Drawer from './ResponsiveDrawer';
 import Container from '@material-ui/core/Container';
-
+import Grid from '@material-ui/core/Grid';
 import { ThemeProvider } from '@material-ui/core/styles';
 import { createMuiTheme } from '@material-ui/core/styles';
+import ProfileEdit from './Profile-edit';
 
 
 const drawerWidth = 240;
